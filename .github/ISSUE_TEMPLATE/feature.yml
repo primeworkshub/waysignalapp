@@ -1,0 +1,55 @@
+name: Feature
+about: Suggest a new feature or enhancement for the StreetDogs MVP
+title: ''
+labels: feature
+assignees: ''
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem"
+      description: "Describe the problem this feature solves."
+      placeholder: "Why is this feature needed?"
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Proposed solution"
+      description: "High-level implementation idea. Keep it concise."
+  - type: input
+    id: api_changes
+    attributes:
+      label: "API changes (if any)"
+      description: "Endpoints, request/response, or DB changes."
+  - type: input
+    id: ui_changes
+    attributes:
+      label: "UI changes (if any)"
+      description: "Screens/components involved."
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "Acceptance criteria"
+      description: "List measurable acceptance criteria."
+  - type: checkboxes
+    id: telemetry
+    attributes:
+      label: "Telemetry"
+      options:
+        - label: "app_open"
+          value: app_open
+        - label: "safety_mode_on/off"
+          value: safety_mode
+        - label: "report_created"
+          value: report_created
+  - type: textarea
+    id: risks
+    attributes:
+      label: "Risks"
+      description: "Privacy, battery, Play Store policy, abuse, etc."
+  - type: dropdown
+    id: stack
+    attributes:
+      label: "Primary stack"
+      options:
+        - ReactNative + Supabase
+        - Other
