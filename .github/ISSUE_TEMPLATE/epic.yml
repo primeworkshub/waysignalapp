@@ -1,0 +1,30 @@
+name: Epic
+about: High-level epic grouping multiple related issues
+title: ''
+labels: epic
+assignees: ''
+body:
+  - type: input
+    id: epic_summary
+    attributes:
+      label: "Epic summary"
+      description: "One-line summary of the epic."
+  - type: textarea
+    id: goals
+    attributes:
+      label: "Goals / success criteria"
+      description: "What success looks like for this epic."
+  - type: textarea
+    id: milestones
+    attributes:
+      label: "Milestones / issues"
+      description: "List child issues or milestones."
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "Acceptance criteria"
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: "Dependencies"
+      description: "Other epics, infra, or third-party constraints."

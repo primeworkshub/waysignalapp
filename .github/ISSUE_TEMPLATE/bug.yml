@@ -1,0 +1,43 @@
+name: Bug
+about: Report a bug in the app or backend
+title: ''
+labels: bug
+assignees: ''
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: "Summary"
+      description: "Short description of the bug."
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce"
+      description: "Provide step-by-step reproduction instructions."
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected behavior"
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual behavior"
+  - type: input
+    id: environment
+    attributes:
+      label: "Environment"
+      description: "OS, device, Android version, app build, backend branch, etc."
+  - type: input
+    id: screenshots
+    attributes:
+      label: "Screenshots / logs"
+      description: "Attach or paste relevant logs/screenshots."
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "Severity"
+      options:
+        - Critical
+        - Major
+        - Minor
+        - Trivial
